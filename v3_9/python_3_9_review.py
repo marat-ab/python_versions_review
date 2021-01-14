@@ -27,6 +27,7 @@ def words_len_calc(words: list[str]) -> dict[str, int]:
     return out_d
 
 print(words_len_calc("one two three four five".split()))
+print()
 
 # Annotated Type Hints
 from typing import Annotated, get_type_hints
@@ -37,3 +38,4 @@ def speed(distance: Annotated[float, "feet"], time: Annotated[float, "seconds"])
     return distance / time * fps2mph
 
 print(get_type_hints(speed))
+print()
